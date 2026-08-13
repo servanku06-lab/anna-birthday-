@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>For Anna ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600&display=swap');
+*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;font-family:'DM Sans',sans-serif}
+body{background:#f8edf1;color:#49383e;overflow-x:hidden}
+.bg{position:fixed;inset:0;background:
+radial-gradient(circle at 15% 15%,#fff 0 8%,transparent 28%),
+radial-gradient(circle at 85% 80%,#f0d9e3 0 8%,transparent 30%),
+linear-gradient(145deg,#fff8fa,#f6e7ed);z-index:-2}
+.blob{position:fixed;border-radius:50%;filter:blur(2px);opacity:.45;z-index:-1}
+.b1{width:180px;height:180px;background:#e9bfd0;top:-70px;right:-40px}.b2{width:140px;height:140px;background:#d8c5e8;bottom:-45px;left:-30px}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px}
+.card{width:min(94vw,610px);min-height:650px;border:1px solid #fff;background:#ffffffaa;backdrop-filter:blur(18px);border-radius:34px;box-shadow:0 30px 90px #6b4c5b1c;display:flex;align-items:center;justify-content:center;padding:28px;position:relative;overflow:hidden}
+.page{width:100%;text-align:center;animation:appear .7s ease}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hidden{display:none!important}
+.kicker{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:#a06d83;font-weight:700}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,12vw,4.8rem);line-height:.95;margin:12px 0;color:#7d4c61}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,7vw,2.5rem);margin:8px 0;color:#7d4c61}
+p{line-height:1.75}.lead{max-width:430px;margin:0 auto 25px;color:#725d65}
+button{font:inherit}.primary{border:0;background:#805169;color:#fff;padding:14px 23px;border-radius:999px;cursor:pointer;box-shadow:0 10px 25px #80516933;transition:.2s}.primary:active{transform:scale(.96)}
+.music{position:absolute;top:18px;right:18px;width:44px;height:44px;border:1px solid #ead8df;background:#fff;border-radius:50%;cursor:pointer;font-size:18px}
+.small{font-size:.82rem;color:#9a818a}.divider{width:55px;height:2px;background:#dcb4c5;margin:18px auto}
+
+/* cake */
+.cakeWrap{height:250px;display:flex;align-items:end;justify-content:center;margin:5px auto 0}
+.cake{width:245px;height:210px;position:relative;cursor:pointer}
+.plate{position:absolute;width:245px;height:22px;bottom:5px;border-radius:50%;background:#e7c9d5;box-shadow:0 5px 0 #d6b2c2}
+.tier{position:absolute;left:28px;bottom:25px;width:190px;height:72px;background:linear-gradient(#d895ad,#c97998);border-radius:12px 12px 22px 22px}
+.tier2{position:absolute;left:45px;bottom:83px;width:156px;height:55px;background:#efbdcc;border-radius:13px 13px 18px 18px}
+.cream{position:absolute;left:43px;bottom:124px;width:160px;height:24px;background:#fff9fb;border-radius:50%;box-shadow:0 4px 0 #f0d9e1}
+.drip{position:absolute;background:#fff9fb;width:15px;height:28px;border-radius:0 0 10px 10px;bottom:107px}.d1{left:62px}.d2{left:110px}.d3{left:165px}
+.candle{position:absolute;left:112px;bottom:146px;width:21px;height:58px;border-radius:6px;background:repeating-linear-gradient(135deg,#fff 0 8px,#d993b0 8px 16px)}
+.flame{position:absolute;left:111px;bottom:197px;width:24px;height:32px;background:#ffc95f;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 0 25px #ffc95f;animation:flicker .6s infinite alternate}@keyframes flicker{to{transform:rotate(-45deg) scale(1.08)}}
+.smoke{position:absolute;left:116px;bottom:198px;font-size:24px;opacity:0}.off .flame{display:none}.off .smoke{opacity:.45;animation:smoke 2s ease forwards}@keyframes smoke{to{transform:translateY(-35px) translateX(8px);opacity:0}}
+.instruction{font-size:.85rem;color:#987580;margin-top:-3px}
+
+/* message */
+.messageBox{perspective:1000px;margin:15px auto;width:min(100%,500px)}
+.flip{position:relative;min-height:390px;transition:transform .7s;transform-style:preserve-3d;cursor:pointer}
+.flip.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:25px;background:#fff;border:1px solid #f0dce3;padding:28px;box-shadow:0 15px 35px #704b5b15;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.back{transform:rotateY(180deg);overflow-y:auto;justify-content:flex-start;padding-top:24px;padding-bottom:24px}
+.heart{font-size:34px}.back p{margin:7px 0}.signature{margin-top:12px;font-family:'Playfair Display',serif;font-size:1.25rem;color:#805169}
+.tap{font-size:.78rem;color:#ad8c98;margin-top:13px}
+.conf{position:fixed;top:-20px;font-size:20px;z-index:10;pointer-events:none;animation:fall 4s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(700deg);opacity:0}}
+.float{position:fixed;bottom:-30px;color:#c996aa;opacity:.25;font-size:22px;animation:float 8s linear infinite;z-index:-1}@keyframes float{to{transform:translateY(-115vh) rotate(180deg)}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="blob b1"></div><div class="blob b2"></div>
+<div class="screen"><main class="card">
+
+<button class="music" id="music" onclick="toggleMusic()" aria-label="music">♫</button>
+
+<section class="page" id="welcome">
+<div class="kicker">a little something for you</div>
+<h1>Anna,<br>this is yours ♡</h1>
+<div class="divider"></div>
+<p class="lead">Take a tiny moment for yourself.<br>There is a birthday wish waiting inside. ✨</p>
+<button class="primary" onclick="start()">Open it →</button>
+<p class="small">turn your sound on for a little surprise ♫</p>
+</section>
+
+<section class="page hidden" id="cakePage">
+<div class="kicker">make a wish</div>
+<h2>Happy Birthday, Anna 🎂</h2>
+<p class="lead">Close your eyes, make a wish,<br>then tap the flame to blow out your candle.</p>
+<div class="cakeWrap"><div class="cake" id="cake" onclick="blow()">
+<div class="plate"></div><div class="tier"></div><div class="tier2"></div><div class="cream"></div>
+<div class="drip d1"></div><div class="drip d2"></div><div class="drip d3"></div>
+<div class="candle"></div><div class="flame"></div><div class="smoke">〰</div>
+</div></div>
+<p class="instruction" id="instruction">tap the candle ✨</p>
+</section>
+
+<section class="page hidden" id="letterPage">
+<div class="kicker">one more thing...</div>
+<h2>For my favorite sister ♡</h2>
+<div class="messageBox">
+<div class="flip" id="flip" onclick="flipCard()">
+<div class="face">
+<div class="heart">💌</div>
+<h2>There is a little message for you.</h2>
+<p class="tap">tap the card to open it</p>
+</div>
+<div class="face back">
+<div class="heart">🌷</div>
+<p><b>Happy Birthday, Anna.</b></p>
+<p>I hope this new year of your life is filled with the kind of happiness that stays, the kind of laughter that makes your cheeks hurt, and the kind of memories you'll smile about years from now.</p>
+<p>Thank you for being my sister, for all the silly moments, the endless laughs, the little arguments, and all the memories only we could understand.</p>
+<p>No matter how much we grow or where life takes us, you'll always have a special place in my heart. I hope you never forget how loved, appreciated, and precious you are.</p>
+<p>May this year be gentle with you, bring you closer to everything you've dreamed of, and give you countless reasons to say, <i>“this is one of the best years of my life.”</i> ✨</p>
+<p>Happy birthday, Anna. I'm so lucky that out of all the people in this world, I get to call you my sister. 🤍</p>
+<div class="signature">Love you always ♡</div>
+</div>
+</div></div>
+<p class="small">Happy birthday, Anna. You deserve the prettiest year. 🤍</p>
+</section>
+</main></div>
+
+<script>
+let audioCtx=null, playing=false, timer=null;
+function start(){
+ document.getElementById('welcome').classList.add('hidden');
+ document.getElementById('cakePage').classList.remove('hidden');
+ musicStart(); confetti(35);
+}
+function blow(){
+ const c=document.getElementById('cake'); if(c.classList.contains('off'))return;
+ c.classList.add('off'); document.getElementById('instruction').textContent='Wish made. ✨';
+ confetti(65);
+ setTimeout(()=>{document.getElementById('cakePage').classList.add('hidden');document.getElementById('letterPage').classList.remove('hidden')},1200);
+}
+function flipCard(){document.getElementById('flip').classList.toggle('flipped');}
+function tone(freq,dur,when){
+ if(!audioCtx)return;
+ const o=audioCtx.createOscillator(),g=audioCtx.createGain();
+ o.type='triangle';o.frequency.value=freq;
+ g.gain.setValueAtTime(0,when);
+ g.gain.linearRampToValueAtTime(.045,when+.04);
+ g.gain.exponentialRampToValueAtTime(.001,when+dur);
+ o.connect(g).connect(audioCtx.destination);o.start(when);o.stop(when+dur+.04);
+}
+function musicStart(){
+ if(audioCtx){if(audioCtx.state==='suspended')audioCtx.resume();return}
+ audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+ /* A soft original birthday-like melody, so no copyrighted audio file is required. */
+ const melody=[392,392,440,392,523.25,493.88,392,392,440,392,587.33,523.25,
+ 392,392,784,659.25,523.25,493.88,440,698.46,698.46,659.25,523.25,587.33,523.25];
+ let i=0;
+ function loop(){
+  if(!playing)return;
+  const now=audioCtx.currentTime;
+  melody.forEach((n,j)=>tone(n,.42,now+j*.28));
+  timer=setTimeout(loop,7100);
+ }
+ playing=true;document.getElementById('music').textContent='❚❚';loop();
+}
+function toggleMusic(){
+ if(!audioCtx){musicStart();return}
+ if(playing){playing=false;clearTimeout(timer);document.getElementById('music').textContent='♫'}
+ else{playing=true;document.getElementById('music').textContent='❚❚';musicStart()}
+}
+function confetti(n){
+ const a=['✦','♡','✿','🎀','✨','•'];
+ for(let i=0;i<n;i++){let x=document.createElement('div');x.className='conf';x.textContent=a[Math.floor(Math.random()*a.length)];
+ x.style.left=Math.random()*100+'vw';x.style.animationDelay=Math.random()*.8+'s';x.style.fontSize=(12+Math.random()*16)+'px';document.body.appendChild(x);setTimeout(()=>x.remove(),4800)}
+}
+for(let i=0;i<10;i++){let x=document.createElement('div');x.className='float';x.textContent='♡';x.style.left=Math.random()*100+'vw';x.style.animationDelay=Math.random()*8+'s';document.body.appendChild(x)}
+</script>
+</body>
+</html>
